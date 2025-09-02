@@ -1,0 +1,34 @@
+.service-area {
+    @apply bg-center bg-cover bg-no-repeat;
+    background-image: url('../../../public/assets/img/shape/service-bg.jpg');
+}
+
+.service-items {
+    @apply h-[450px];
+}
+
+.service-item-parent {
+    @apply bg-white border-[1.5px] border-white rounded-[10px];
+    box-shadow: inset 0px -23px 25.3px #F6F7FF, inset 0px 33px 101.1px #EEEFFF;
+}
+
+.service-item {
+    @apply flex items-center;
+
+    &-img {
+        @apply p-[50px];
+
+        img {
+            @apply h-[345px] !important;
+            @apply w-full max-w-[414px] min-w-[414px] rounded-[10px] border-[5px] border-white;
+        }
+    }
+}
+
+.service-badge {
+    @apply bg-[#EEEFFF] inline-flex rounded-full mb-2;
+
+    span {
+        @apply h-[30px] text-[14px] font-medium relative px-4 bg-gradient-to-r from-[#5163FF] via-[#C872F2] to-[#FE71B9] bg-clip-text text-transparent inline-flex justify-center items-center;
+    }
+}

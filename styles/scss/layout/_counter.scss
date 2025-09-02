@@ -1,0 +1,28 @@
+.counter-items {
+    @apply flex justify-between items-center gap-5;
+}
+.counter-item {
+    @apply max-w-[200px] w-full;
+    &-border {
+        @apply h-0.5 w-full bg-heading/15 mb-[19px] transition-all duration-300;
+    }
+    &-title {
+        @apply mb-[18px];
+        h2, .counter-text, .counter-sign {
+            @apply text-[80px] font-normal leading-none text-heading;
+        }
+        .counter-sign {
+            @apply text-[50px];
+        }
+    }
+    &-subtitle {
+        span {
+            @apply text-[16px] font-body font-normal text-body block leading-none;
+        }
+    }
+    &:hover {
+        .counter-item-border {
+            @apply bg-primary;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.hero-title {
+    span {
+        @apply relative bg-gradient-to-r from-[#5163FF] via-[#C872F2] to-[#FE71B9] bg-clip-text text-transparent tracking-tight;
+
+        &:after {
+            content: "";
+            background: url('../../../public/assets/img/shape/booster.png');
+            @apply h-[92px] w-[92px] bg-contain bg-no-repeat bg-center top-[25px] right-0 inline-block ml-2 relative;
+        }
+    }
+}
+.hero-client-thumb {
+    ul {
+        @apply flex;
+        li {
+            @apply leading-none relative ml-[-15px] hover:z-[2] transition-all duration-300;
+            .hero-client-overlay {
+                @apply h-full w-full absolute top-0 left-0 inline-flex justify-center items-center opacity-0 invisible transition-all duration-300 cursor-pointer bg-secondary/80 rounded-[50%] border-[3px] border-white;
+            }
+            &:hover {
+                .hero-client-overlay {
+                    @apply opacity-100 visible;
+                }
+            }
+            img {
+                @apply h-[55px] w-[55px] rounded-[50%] !important;
+            }
+        }
+    }
+}
+.outer-shape-1,
+.outer-shape-2,
+.inner-shape-1,
+.inner-shape-2 {
+    @apply absolute z-[-1];
+}
+.outer-shape-1 {
+  @apply left-0 -bottom-[230px];
+}
+.outer-shape-2 {
+  @apply right-0 -top-[150px];
+}
+.inner-shape-1 {
+  @apply -left-[145px] top-[70px] opacity-50 blur-[2px];
+}
+
+.inner-shape-2 {
+    @apply right-[350px] top-[-20px];
+}
+.hero-thumb-wrapper {
+    @apply absolute bottom-[-50px] right-0;
+}
+.hero-thumb {
+  @apply relative w-full overflow-hidden;
+  -webkit-mask-image: url('../../../public/assets/img/hero/hero-bg.png');
+  mask-image: url('../../../public/assets/img/hero/hero-bg.png');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: inherit;
+  mask-position: inherit;
+  img {
+    @apply w-[1085px] max-w-[1085px] !important;
+    @apply max-h-[605px];
+  }
+}
+.hero-video-btn {
+    @apply h-[151px] w-[151px] absolute top-[-80px] left-[48.5%] z-[1] border-[2px] border-dashed border-primary/10 rounded-[50%] inline-flex justify-center items-center;
+}
+.hero-video-btn-play {
+    @apply absolute;
+    button {
+        @apply h-[60px] w-[60px] inline-flex justify-center items-center cursor-pointer bg-gradient-to-b from-[#708BFD] to-[#FE71B9] text-white rounded-[50%];
+    }
+}

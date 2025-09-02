@@ -1,0 +1,11 @@
+import React from 'react';
+
+const FacebookIcon = () => {
+    return (
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.7139 13.3906V7.28296H6.77691L7.08642 4.90201H4.7139V3.38211C4.7139 2.69298 4.90575 2.22335 5.90172 2.22335L7.16992 2.22283V0.0932186C6.9506 0.0649078 6.19776 0 5.32154 0C3.49184 0 2.23919 1.10939 2.23919 3.1463V4.90201H0.169922V7.28296H2.23919V13.3906H4.7139Z" fill="currentColor" />
+        </svg>
+    );
+};
+
+export default FacebookIcon;

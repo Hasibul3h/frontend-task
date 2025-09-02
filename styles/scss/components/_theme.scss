@@ -1,0 +1,159 @@
+// @use '../utils' as *;
+
+/*----------------------------------------*/
+/*  THEME DEFAULT CSS START
+/*----------------------------------------*/
+
+* {
+	@apply m-0 p-0 box-border;
+}
+
+/*---------------------------------
+	typography css start 
+---------------------------------*/
+body {
+	@apply font-body text-[16px] font-normal text-body leading-normal;
+}
+.custom-container {
+	@apply max-w-[1362px] my-0 mx-auto;
+}
+a {
+	@apply no-underline;
+}
+div {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-body text-heading leading-tight font-semibold;
+	}
+
+	h1 {
+		@apply text-[100px] leading-[1.1] tracking-[-2%];
+	}
+
+	h2 {
+		@apply text-[80px] leading-[1.1] tracking-[-2%];
+	}
+
+	h3 {
+		@apply text-[48px] leading-tight tracking-[-1%];
+	}
+
+	h4 {
+		@apply text-[36px] leading-tight tracking-[-1%];
+	}
+
+	h5 {
+		@apply text-[24px] leading-normal tracking-[-1%];
+	}
+
+	h6 {
+		@apply text-[20px] leading-normal tracking-[-1%];
+	}
+}
+
+p {
+	@apply font-body text-[18px] font-normal text-body leading-[1.7];
+}
+
+a,
+button,
+svg,
+p,
+input,
+select,
+textarea,
+li,
+.transition-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	transition: all linear 0.3s;
+}
+
+*::-moz-selection {
+	@apply text-heading bg-white;
+}
+
+::-moz-selection {
+	@apply text-heading bg-white;
+}
+
+::selection {
+	@apply text-heading bg-white;
+}
+
+
+*::-moz-placeholder {
+	@apply text-white bg-transparent text-[16px] opacity-100;
+}
+
+*::placeholder {
+	@apply text-white bg-transparent text-[16px] opacity-100;
+}
+
+/*----------------------------------------
+    Section Title 
+-----------------------------------------*/
+.section-subtitle {
+	@apply bg-gradient-to-r from-[#708BFD] to-[#FE71B9] inline-flex items-center gap-[8px] px-[15px] pt-[8px] pb-[9px] text-[14px] font-medium text-white rounded-[48px] tracking-[-1%];
+  box-shadow: inset 0px -4px 18.5px rgba(255, 255, 255, 0.79);
+}
+.section-subtitle-two {
+	@apply text-[18px] font-normal bg-gradient-to-r from-[#5163FF] via-[#C872F2] to-[#FE71B9] bg-clip-text text-transparent;
+}
+.section-title {
+	@apply font-semibold;
+}
+.section-title-two {
+	background: linear-gradient(130.68deg, rgba(81, 99, 255, 0.08) 27.01%, rgba(254, 113, 185, 0.02) 113.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	@apply text-[200px] font-bold leading-[80%] text-end pr-[155px];
+	span {
+		@apply mr-[-155px];
+	}
+}
+
+
+/*----------------------------------------
+    Body Overlay 
+-----------------------------------------*/
+
+// .body-overlay {
+// 	background-color: rgba(0, 0, 0, 0.6);
+// 	height: 100%;
+// 	width: 100%;
+// 	position: fixed;
+// 	top: 0;
+// 	z-index: 999;
+// 	left: 0;
+// 	opacity: 0;
+// 	visibility: hidden;
+// 	@include transition(.3s);
+// 	backdrop-filter: blur(10px);
+
+// 	&:hover {
+// 		cursor: pointer;
+// 	}
+// }
+
+// .body-overlay.opened {
+// 	opacity: 1;
+// 	visibility: visible;
+// }
+
+/*----------------------------------------
+    Progress Wrap
+-----------------------------------------*/
+// .hero-title {
+// 	@apply bg-primary;
+// }

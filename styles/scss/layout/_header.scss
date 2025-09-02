@@ -1,0 +1,144 @@
+.header-top-bg {
+    @apply bg-white rounded-[10px] mt-5 pl-[29px] pr-[30px];
+    box-shadow: inset 0px 20px 46px #F1F3FF, inset 2.25px -7px 44px #F1F3FF;
+}
+.header-content {
+    @apply h-full flex items-center;
+    ul {
+        @apply flex items-center;
+        li {
+            &.separator {
+                @apply h-5 w-[1px] mx-4 bg-[#2A303D]/15 translate-y-[1px];
+            }
+            a {
+                @apply text-body text-[14px] font-medium leading-none font-body hover:text-primary hover:fill-primary inline-flex gap-2 items-center;
+                svg {
+                    @apply inline-block translate-y-[1px] text-body;
+                }
+                &:hover {
+                    svg {
+                        @apply text-primary;
+                    }
+                }
+            }
+        }
+    }
+}
+.header-info {
+    @apply flex items-center justify-end h-full;
+    .language-selector {
+        @apply flex items-center;
+        svg {
+            @apply inline-block mr-2 translate-y-[1px] text-body;
+        }
+    }
+    .separator {
+        @apply h-5 w-[1px] mx-4 bg-[#2A303D]/15 translate-y-[1px];
+    }
+}
+.header-social {
+    ul {
+        @apply flex gap-3.5 items-center;
+        li {
+            a {
+                @apply text-body text-[14px] font-medium leading-none font-body hover:text-primary;
+            }
+        }
+    }
+}
+.header-actions {
+    button {
+        @apply text-body hover:text-primary;
+    }
+}
+.cart-btn-wrap {
+    span {
+        @apply h-[19px] w-[19px] leading-[18px] rounded-[50%] bg-primary inline-flex justify-center text-[10px] font-bold text-white absolute top-[-13px] right-[-12px];
+    }
+}
+.main-menu {
+    ul {
+        @apply text-center;
+        li {
+            @apply relative list-none inline-block mr-[38px] last:mr-0;
+
+            a {
+                @apply inline-block text-[16px] text-body font-medium px-0 py-[22.5px];
+            }
+
+            &.has-dropdown {
+                &>a {
+                    @apply relative;
+
+                    &::after {
+                        content: '\f107';
+                        @apply text-[15px] text-body font-normal ml-[5px] inline-block translate-y-[1px];
+                        font-family: "Font Awesome 6 Pro";
+                    }
+                }
+            }
+
+            .submenu {
+                @apply absolute top-full left-[0] w-[200px] bg-primary z-[99] invisible opacity-0 scale-y-0 origin-top rounded-xl py-[15px] px-[25px] transition-all duration-300 shadow-[0px_30px_70px_0px_rgba(11,6,70,0.08)] text-left;
+                -webkit-transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease, -webkit-transform 700ms ease;
+                -moz-transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease, -webkit-transform 700ms ease;
+                -ms-transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease, -webkit-transform 700ms ease;
+                -o-transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease, -webkit-transform 700ms ease;
+                transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease, -webkit-transform 700ms ease;
+
+                li {
+                    @apply block w-full m-0;
+
+                    &.has-dropdown {
+                        &>a {
+                            &::after {
+                                @apply absolute top-[50%] right-[25px] translate-y-[-50%] rotate-[-90deg];
+                            }
+                        }
+                    }
+
+                    a {
+                        @apply p-0 py-1.5 text-[16px] relative z-[1] text-white w-full;
+
+                        &::before {
+                            content: "";
+                            @apply absolute left-0 right-auto top-[55%] bottom-auto translate-y-[-50%] w-0 h-[2px] bg-white;
+                        }
+                    }
+
+                    .submenu {
+                        @apply left-[120%] top-0 invisible opacity-0;
+                    }
+
+                    &:hover {
+                        &>a {
+                            @apply text-white pl-[18px];
+
+                            &::before {
+                                @apply w-[12px] transition-all delay-100;
+                            }
+                        }
+
+                        &>.submenu {
+                            @apply left-full visible opacity-100;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                &>a {
+                    @apply text-primary;
+
+                    &::after {
+                        @apply text-primary;
+                    }
+                }
+
+                &>.submenu {
+                    @apply top-full visible opacity-100 scale-y-100;
+                }
+            }
+        }
+    }
+}

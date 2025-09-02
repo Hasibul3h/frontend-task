@@ -1,0 +1,57 @@
+.portfolio-item {
+    span {
+        @apply font-medium text-[15px] text-white px-[14px] py-[8.5px] bg-gradient-to-r from-[#708BFD] to-[#FE71B9] leading-none rounded inline-block mb-[5px];
+    }
+    &-img {
+        @apply relative;
+        img {
+            @apply rounded-[10px] border-[5px] border-white;
+        }
+        &-overlay {
+            @apply absolute left-[35px] right-[55px] bottom-[35px] opacity-0 invisible transition-all duration-300;
+        }
+    }
+}
+.portfolio-active-slide {
+    @apply translate-x-[-63%] z-30 opacity-100;
+    .portfolio-item-img-overlay {
+        @apply opacity-100 visible;
+    }
+}
+.second-slide {
+    @apply translate-x-[26%] w-[490px] h-[535px] bottom-[-10px] z-20 opacity-100;
+    img {
+        @apply h-[535px] !important;
+    }
+}
+.third-slide {
+    @apply translate-x-[100%] z-[15] opacity-100 w-[490px] h-[460px] bottom-[-10px];
+    img {
+        @apply h-[460px] !important;
+    }
+}
+.fourth-slide {
+    @apply translate-x-[268%] z-10 opacity-100 rotate-[20deg] bottom-0;
+    img {
+        @apply h-[460px] !important;
+    }
+}
+.fifth-slide {
+    @apply translate-x-[-235%] z-10 opacity-100 rotate-[-20deg] bottom-0;
+    img {
+        @apply h-[460px] !important;
+    }
+}
+.portfolio-title-wrap {
+    @apply flex gap-2.5 justify-between items-center bg-white rounded-lg pl-[23px] py-2 pr-2;
+    box-shadow: 0px 4px 23.6px rgba(81, 99, 255, 0.19);
+    .portfolio-title-arrow {
+        @apply h-[54px] w-[54px] rounded-lg inline-flex justify-center items-center bg-gradient-to-r from-[#708BFD] to-[#FE71B9] text-white cursor-pointer;
+        &:hover {
+            svg {
+                @apply rotate-[45deg];
+            }
+        }
+    }
+}
+

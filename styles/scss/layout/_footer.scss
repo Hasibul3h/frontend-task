@@ -1,0 +1,141 @@
+.footer-description {
+    background: linear-gradient(145.12deg, rgba(254, 113, 185, 0.04) -2.12%, rgba(20, 2, 73, 0.01) 121.13%);
+    box-shadow: inset 0px 20px 122px rgba(19, 7, 150, 0.08), inset 2.24982px -7px 43.7px rgba(255, 255, 255, 0.02);
+    @apply p-[40px] pt-[37px] relative;
+    p {
+        @apply text-white/90 leading-[1.75] text-[16px] font-normal;
+    }
+    span {
+       @apply block; 
+    }
+}
+.shape-line {
+    @apply h-[2px] w-10 opacity-20 top-0 left-0 absolute;
+    background: linear-gradient(102.44deg, #5163FF -0.32%, #FE71B9 100%);
+}
+.footer-social {
+    @apply flex gap-3;
+    a {
+        @apply h-[40px] w-[40px] rounded-[10px] inline-flex justify-center items-center text-white/40 bg-white/10;
+        &:hover {
+            @apply bg-gradient-to-r from-[#708BFD] to-[#FE71B9] text-white;
+        }
+    }
+}
+.footer-contents {
+    background: linear-gradient(145.12deg, rgba(254, 113, 185, 0.04) -2.12%, rgba(20, 2, 73, 0.01) 121.13%);
+    box-shadow: inset 0px 20px 122px rgba(19, 7, 150, 0.08), inset 2.24982px -7px 43.7px rgba(255, 255, 255, 0.02);
+    @apply p-[50px] pt-[41px] relative h-full;
+    .shape-line {
+        @apply w-20;
+    }
+}
+
+.footer-menus {
+    ul {
+        li {
+            @apply mb-3 last:mb-0;
+            a {
+                @apply text-[16px] font-normal text-white/90 flex items-center whitespace-nowrap;
+                span {
+                    @apply opacity-0 invisible transition-all duration-300 inline-block ml-[-8px];
+                }
+                &:hover {
+                    @apply bg-gradient-to-r from-[#5163FF] via-[#C872F2] to-[#FE71B9] bg-clip-text text-transparent;
+                    span {
+                        @apply opacity-100 pr-2.5 visible ml-0;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer-event {
+    @apply flex items-center gap-5;
+    &-img {
+        @apply h-[50px] w-[50px] border-[2px] border-transparent rounded-[50%];
+        img {
+            @apply rounded-[50%];
+        }
+    }
+    &-content {
+        a {
+            @apply text-[16px] font-medium text-white/90 hover:underline;
+        }
+        span {
+            @apply text-[16px] font-normal text-white/80 block;
+        }
+    }
+    &:hover {
+        .footer-event-img {
+            @apply border-primary;
+        }
+    }
+}
+.copyright-text {
+    span {
+        @apply text-[16px] font-normal text-white/90;
+        a {
+            @apply bg-gradient-to-r from-[#5163FF] via-[#C872F2] to-[#FE71B9] bg-clip-text text-transparent;
+        }
+    }
+}
+.copyright-menus {
+    ul {
+        @apply flex gap-7;
+        li {
+            @apply relative;
+            a {
+                @apply text-[16px] font-normal text-white;
+                &:hover {
+                    @apply bg-gradient-to-r from-[#5163FF] via-[#C872F2] to-[#FE71B9] bg-clip-text text-transparent;
+                }
+            }
+            &:after {
+                content: '';
+                @apply h-[5px] w-[5px] rounded-[50%] absolute top-[52%] translate-y-[-50%] right-[-16px] bg-white/30;
+            }
+            &:last-child {
+                &:after {
+                    @apply hidden;
+                }
+            }
+        }
+    }
+}
+.newsletter-bg {
+    @apply  bg-gradient-to-r from-[#708BFD] to-[#FE71B9] rounded-[10px];
+}
+.newsletter-wrap {
+    background: url('../../../public/assets/img/footer/newsletter-bg.png');
+    @apply bg-center bg-no-repeat bg-cover rounded-[10px] py-[50px] px-[70px];
+}
+.newsletter-text-icon {
+    @apply h-[100px] w-[100px] rounded-[50%] border-[2px] border-white/20 inline-flex justify-center items-center;
+    span {
+        @apply h-[80px] w-[80px] rounded-[50%] bg-white inline-flex justify-center items-center;
+    }
+}
+.newsletter-form {
+    form {
+        @apply relative;
+        input {
+            background: linear-gradient(153.11deg, rgba(255, 255, 255, 0.45) -3.36%, rgba(254, 113, 185, 0) 149.26%);
+            box-shadow: inset 0px 20px 122px rgba(13, 7, 75, 0.08), inset -2px -1px 7.8px rgba(255, 255, 255, 0.15);
+            @apply h-[70px] rounded-[10px] pl-6 pr-[150px] border-[2px] border-white/35 text-[18px] font-normal text-white/80 outline-none placeholder:text-white/80;
+        }
+        button.rt-btn.rt-btn-sm {
+            @apply absolute top-2.5 right-2.5 pt-[17px] pb-[19px];
+        }
+    }
+}
+.footer-shape-1,
+.footer-shape-2 {
+    @apply absolute blur-[17.5px];
+}
+.footer-shape-1 {
+    @apply left-0 top-[200px];
+}
+.footer-shape-2 {
+    @apply bottom-[0px] right-[85px];
+}

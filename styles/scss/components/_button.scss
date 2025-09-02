@@ -1,0 +1,27 @@
+.rt-btn {
+    @apply text-[14px] text-white font-semibold inline-block leading-none transition-all duration-300 tracking-[-1%] px-5 py-3 rounded-[10px];
+
+    &.rt-btn-sm {
+        @apply pt-3.5 pb-4 px-5;
+    }
+
+    &.rt-btn-md {
+        @apply px-10 pt-[21px] pb-[22px] text-[18px];
+    }
+
+    &.rt-btn-primary {
+        background: radial-gradient(64.58% 59% at 37.13% 12%, rgba(255, 255, 255, 0.315) 0%, rgba(255, 255, 255, 0) 55.41%, rgba(255, 255, 255, 0) 100%), #4C5DEF;
+        box-shadow: 4px 10px 20px rgba(81, 99, 255, 0.26), inset -3px -4px 7px rgba(255, 255, 255, 0.15);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+        @apply hover:shadow-[6px_14px_25px_rgba(81,99,255,0.35)] hover:brightness-110;
+    }
+    &.rt-gray-outline-btn {
+        @apply text-[15px] text-body border-[2px] border-[#E6ECF3] font-semibold hover:text-primary hover:border-primary px-[26px] pb-[17px] pt-[16px];
+    }
+}
+.common-slider-arrow-btn {
+    @apply h-[60px] w-[60px] inline-flex items-center justify-center border-[2px] border-primary/20 text-primary/20 rounded-[50%] transition-all duration-300;
+    &:hover {
+        @apply bg-gradient-to-b from-secondary to-primary text-white opacity-100 border-none;
+    }
+}

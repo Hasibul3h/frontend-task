@@ -1,0 +1,15 @@
+.video-overlay {
+    @apply fixed z-[-1] top-0 bottom-0 left-0 right-0 bg-black/80 opacity-0 transition-all duration-500 invisible;
+}
+
+.video-overlay-close {
+    @apply absolute z-[1000] top-[15px] right-5 text-[36px] leading-none font-normal text-white no-underline cursor-pointer transition-all duration-200;
+}
+
+.video-overlay.open {
+    @apply fixed z-[9999] visible opacity-100;
+}
+
+.video-overlay iframe {
+    @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[1000] w-[80%] h-[80%];
+}

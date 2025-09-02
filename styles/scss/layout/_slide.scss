@@ -1,0 +1,21 @@
+.text-slide-area {
+    @apply relative;
+    &:before {
+        content: '';
+        @apply border-b-[2px] border-primary/40 border-dashed w-full rotate-[-1.31deg] absolute left-0 bottom-0 z-[-1];
+    }
+    &:after {
+        content: '';
+        @apply border-b-[2px] border-secondary/40 border-dashed w-full rotate-[1.29deg]  absolute right-0 bottom-0 z-[-1];
+    }
+}
+.text-slide-bg {
+    @apply bg-gradient-to-r from-[#708BFD] to-[#FE71B9] py-[19.5px];
+}
+.text-slide-shape {
+    @apply h-[46px] w-[46px];
+}
+.text-slide-text-title {
+     @apply text-[61.5px] uppercase text-transparent whitespace-nowrap font-bold font-body leading-none;
+    -webkit-text-stroke: 1.5px white;
+}
