@@ -130,7 +130,7 @@ const FooterArea = () => {
                             <div className="newsletter-form">
                                 <form action="#">
                                     <input type="text" placeholder='Enter your email...' />
-                                    <button type='submit' className='rt-btn rt-btn-sm rt-btn-primary'>Subscribe</button>
+                                    <button type='submit' className='btn btn-sm btn-primary'>Subscribe</button>
                                 </form>
                             </div>
                         </div>

@@ -47,7 +47,7 @@ const AboutArea = () => {
                                 <li><span></span> Contrary to popular belief is not simply random</li>
                             </ul>
                             <div className="about-author-wrap flex flex-wrap gap-7">
-                                <Link href="#" className='rt-btn rt-btn-md rt-btn-primary'>More about us</Link>
+                                <Link href="#" className='btn btn-md btn-primary'>More about us</Link>
                                 <div className="about-author flex gap-[18px] items-center">
                                     <div className="about-author-img">
                                         <Image src={author} style={{ width: "auto", height: "auto" }} alt="Author image" />

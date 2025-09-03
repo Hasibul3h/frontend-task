@@ -51,7 +51,7 @@ const ServicesArea = () => {
                                                     </div>
                                                     <h3 className="font-semibold mb-2.5">{service.title}</h3>
                                                     <p className="mb-5">{service.description}</p>
-                                                    <Link href={service.link} className="rt-btn rt-gray-outline-btn">
+                                                    <Link href={service.link} className="btn gray-outline-btn">
                                                         Read Details
                                                     </Link>
                                                 </div>
@@ -64,7 +64,7 @@ const ServicesArea = () => {
                     </Swiper>
                 </div>
                 <div className="text-center">
-                    <Link href="#" className='rt-btn rt-btn-md rt-btn-primary'>View all services</Link>
+                    <Link href="#" className='btn btn-md btn-primary'>View all services</Link>
                 </div>
             </div>
         </section>

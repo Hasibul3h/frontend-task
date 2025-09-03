@@ -5,7 +5,7 @@ import HeaderArea from "@/components/layout/header/HeaderArea";
 import Wrapper from "@/components/layout/Wrapper";
 
 export const metadata: Metadata = {
-  title: "Home - Kindergarten & School Next js Template",
+  title: "Home - Rainbow Themes",
 };
 
 const Home = () => {

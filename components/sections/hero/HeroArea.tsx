@@ -36,7 +36,7 @@ const HeroArea = () => {
                                 <h1 className='hero-title mb-[27px]'>We shape the future of <span>business</span></h1>
                                 <p className='mb-[45px]'>A business consultant is a professional who provides expert advice <br />and guidance to businesses on various aspects such.</p>
                                 <div className='flex items-center gap-[30px] flex-wrap mb-[55px]'>
-                                    <button type='button' className='rt-btn rt-btn-md rt-btn-primary'>Explore more</button>
+                                    <button type='button' className='btn btn-md btn-primary'>Explore more</button>
                                     <div className='flex items-center gap-[10px]'>
                                         <span className='h-[50px] w-[50px] rounded-[50%] inline-flex items-center justify-center border-[2px] border-heading/10 text-primary'><CallIcon /></span>
                                         <div>

@@ -36,7 +36,7 @@ const HeaderArea = () => {
                             </div>
                             <div className="col-span-3">
                                 <div className="header-btn-wrap flex h-full items-center justify-end">
-                                    <button type='button' className='rt-btn rt-btn-sm rt-btn-primary'>Get a free quote</button>
+                                    <button type='button' className='btn btn-sm btn-primary'>Get a free quote</button>
                                 </div>
                             </div>
                         </div>

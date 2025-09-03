@@ -124,7 +124,7 @@
             box-shadow: inset 0px 20px 122px rgba(13, 7, 75, 0.08), inset -2px -1px 7.8px rgba(255, 255, 255, 0.15);
             @apply h-[70px] rounded-[10px] pl-6 pr-[150px] border-[2px] border-white/35 text-[18px] font-normal text-white/80 outline-none placeholder:text-white/80;
         }
-        button.rt-btn.rt-btn-sm {
+        button.btn.btn-sm {
             @apply absolute top-2.5 right-2.5 pt-[17px] pb-[19px];
         }
     }
