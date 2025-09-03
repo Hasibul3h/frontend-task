@@ -1,3 +1,8 @@
+.header-logo {
+    img {
+        @apply max-w-[200px];
+    }
+}
 .header-top-bg {
     @apply bg-white rounded-[10px] mt-5 pl-[29px] pr-[30px];
     box-shadow: inset 0px 20px 46px #F1F3FF, inset 2.25px -7px 44px #F1F3FF;
