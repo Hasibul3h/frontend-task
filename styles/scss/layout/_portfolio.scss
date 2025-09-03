@@ -14,32 +14,35 @@
 }
 .portfolio-active-slide {
     @apply translate-x-[-63%] z-30 opacity-100;
+    img {
+        @apply h-[605px] w-[595px] object-cover !important;
+    }
     .portfolio-item-img-overlay {
         @apply opacity-100 visible;
     }
 }
 .second-slide {
-    @apply translate-x-[26%] w-[490px] h-[535px] bottom-[-10px] z-20 opacity-100;
+    @apply translate-x-[26%] w-[490px] h-[535px] bottom-[-5px] z-20 opacity-100;
     img {
-        @apply h-[535px] !important;
+        @apply w-[490px] h-[535px] object-cover !important;
     }
 }
 .third-slide {
-    @apply translate-x-[100%] z-[15] opacity-100 w-[490px] h-[460px] bottom-[-10px];
+    @apply translate-x-[100%] z-[15] opacity-100 bottom-[-5px];
     img {
-        @apply h-[460px] !important;
+        @apply w-[490px] h-[465px] object-cover !important;
     }
 }
 .fourth-slide {
-    @apply translate-x-[268%] z-10 opacity-100 rotate-[20deg] bottom-0;
+    @apply translate-x-[246%] z-10 opacity-100 rotate-[20deg] bottom-0;
     img {
-        @apply h-[460px] !important;
+        @apply w-[490px] h-[465px] object-cover !important;
     }
 }
 .fifth-slide {
-    @apply translate-x-[-235%] z-10 opacity-100 rotate-[-20deg] bottom-0;
+    @apply translate-x-[-223%] z-10 opacity-100 rotate-[-20deg] bottom-0;
     img {
-        @apply h-[460px] !important;
+        @apply w-[490px] h-[465px] object-cover !important;
     }
 }
 .portfolio-title-wrap {

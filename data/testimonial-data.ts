@@ -1,6 +1,8 @@
-import portfolioImg1 from "../public/assets/img/portfolio/portfolio-img-1.png";
-import portfolioImg2 from "../public/assets/img/portfolio/portfolio-img-2.png";
-import portfolioImg3 from "../public/assets/img/portfolio/portfolio-img-3.png";
+import testimonialImg1 from "../public/assets/img/testimonial/testimonial-img-1.png";
+import testimonialImg2 from "../public/assets/img/testimonial/testimonial-img-2.png";
+import testimonialImg3 from "../public/assets/img/testimonial/testimonial-img-3.png";
+import testimonialImg4 from "../public/assets/img/testimonial/testimonial-img-4.png";
+import testimonialImg5 from "../public/assets/img/testimonial/testimonial-img-5.png";
 import { StaticImageData } from "next/image";
 
 interface TestimonialImageItem {
@@ -16,13 +18,13 @@ interface TestimonialItem {
 }
 
 export const testimonialImageData: TestimonialImageItem[] = [
-  { id: 1, image: portfolioImg1 },
-  { id: 2, image: portfolioImg2 },
-  { id: 3, image: portfolioImg3 },
-  { id: 4, image: portfolioImg2 },
-  { id: 5, image: portfolioImg1 },
-  { id: 6, image: portfolioImg2 },
-  { id: 7, image: portfolioImg3 },
+  { id: 1, image: testimonialImg1 },
+  { id: 2, image: testimonialImg2 },
+  { id: 3, image: testimonialImg3 },
+  { id: 4, image: testimonialImg4 },
+  { id: 5, image: testimonialImg5 },
+  { id: 6, image: testimonialImg2 },
+  { id: 7, image: testimonialImg3 },
 ];
 
 export const testimonials: TestimonialItem[] = [

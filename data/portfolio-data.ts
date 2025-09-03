@@ -33,12 +33,12 @@ export const portfolioData: Portfolio[] = [
     id: 4,
     badge: "2025, Business",
     title: "Business Consulting Service",
-    image: portfolioImg1,
+    image: portfolioImg2,
   },
   {
     id: 5,
     badge: "2025, Business",
     title: "Business Consulting Service",
-    image: portfolioImg1,
+    image: portfolioImg3,
   },
 ];
