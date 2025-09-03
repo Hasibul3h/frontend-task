@@ -39,7 +39,7 @@ const FooterArea = () => {
                                     <Link href="#" target='_blank'><LinkedinIcon /></Link>
                                 </div>
                                 <div className='w-full'>
-                                    <span className='shape-line inline-block animate-slide-text'></span>
+                                    <span className='shape-line inline-block'></span>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +111,7 @@ const FooterArea = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <span className='shape-line inline-block animate-slide-text'></span>
+                                <span className='shape-line inline-block'></span>
                             </div>
                         </div>
                     </div>

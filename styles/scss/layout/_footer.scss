@@ -10,7 +10,7 @@
     }
 }
 .shape-line {
-    @apply h-[2px] w-10 opacity-20 top-0 left-0 absolute;
+    @apply h-[2px] w-10 opacity-20 top-0 left-10 absolute;
     background: linear-gradient(102.44deg, #5163FF -0.32%, #FE71B9 100%);
 }
 .footer-social {
@@ -27,7 +27,7 @@
     box-shadow: inset 0px 20px 122px rgba(19, 7, 150, 0.08), inset 2.24982px -7px 43.7px rgba(255, 255, 255, 0.02);
     @apply p-[50px] pt-[41px] relative h-full;
     .shape-line {
-        @apply w-20;
+        @apply w-20 left-[195px];
     }
 }
 
